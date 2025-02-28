@@ -297,7 +297,7 @@ dialog::backdrop {
   opacity: 75%;
 } 
 
-.dialog-floppy {
+.dialog__floppy {
   width: 80px;
 }
 
@@ -318,7 +318,7 @@ dialog::backdrop {
   inline-size: 100%;
   padding: 12px 0;
   background-color: var(--bg-color, #000);
-  border: 2px solid #000;
+  border: 2px solid #8B1A1A;
   text-transform: uppercase;
   margin-block-start: 30px;
 }
