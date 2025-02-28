@@ -301,10 +301,11 @@
       </article>
      <div class="footer__button">
       <button class="button__save button" type="button"
-      onclick="window['dialog'].showModal() "aria-controls="dialog">
-      <svg id="save__icon" viewBox="0 0 39 39">
-        <use href=".svg/floppy#save__icon"> 
-       </use>
+      onclick="window['dialog'].showModal()"
+      aria-controls="dialog">
+      <svg class="save__icon" viewBox="0 0 39 39"  xmlns="http://www.w3.org/2000/svg>
+        <symbol id="save__icon" />
+        <use href=".svg/floppy#save__icon"></use>
       </svg>
       <span class="button__text">Сохранить на память</span>
       </button>
@@ -312,9 +313,9 @@
     </main>
    <dialog class="dialog" id="dialog">
     <div class="dialog__content">
-      <svg id="save__icon" viewBox="0 0 39 39">
-      <use href="./svg/floppy.svg#save__icon"> 
-      </use>
+      <svg class="save__icon" viewBox="0 0 39 39"  xmlns="http://www.w3.org/2000/svg>
+        <symbol id="save__icon" />
+      <use href="./svg/floppy.svg#save__icon"></use>
       </svg>
       <p class="dialog__text">
         Вставьте дискету, чтобы продолжить
