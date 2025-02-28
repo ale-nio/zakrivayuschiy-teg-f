@@ -94,6 +94,7 @@
 }
 
 .label {
+  display: block;
   position: absolute;
   z-index: 1;
   font-family: var(--font-accent, fantazy);
@@ -101,7 +102,6 @@
   filter: opacity(50%);
   color: var(--font-color, #000);
   mix-blend-mode: hard-light;
-  display: block;
   top: 25px;
   right: 25px;
   text-shadow: 1px var(--font-accent-color, #000;)
