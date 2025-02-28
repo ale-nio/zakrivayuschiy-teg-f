@@ -16,10 +16,10 @@
   font-family: var(--font-main, sans-serif);
   font-variation-settings: 'wght' var(--font-weight-subtitle, 400);
   font-size: 18px;
-  color: var(--font-color, #8B1A1A);
+  color: var(--font-color, #000);
   background-size: cover;
   background-image: var(--bg-gradient);
-  background-color: var(--bg-color, #fff);
+  background-color: var(--bg-color, #000);
   background-attachment: fixed;
   margin-block-start: 100px;
 }
@@ -69,7 +69,7 @@
   display: grid;
   gap: 1px;
   border: 2px solid #8B1A1A;
-  background-color: var(--bg-color, #fff);
+  background-color: var(--bg-color, #000);
 }
 
 @media (width <=375px) {
@@ -94,7 +94,6 @@
 }
 
 .label {
-  display: block;
   position: absolute;
   z-index: 1;
   font-family: var(--font-accent, fantazy);
@@ -102,6 +101,7 @@
   filter: opacity(50%);
   color: var(--font-color, #000);
   mix-blend-mode: hard-light;
+  display: block;
   top: 25px;
   right: 25px;
   text-shadow: 1px var(--font-accent-color, #000);
@@ -114,7 +114,7 @@
   }
 }
 
-@supports((text-stroke: 1px var(--font-accent-color, #fff)) or (-webkit-text-stroke: 1px var(--font-accent-color, #fff))) {
+@supports((text-stroke: 1px var(--font-accent-color, #000)) or (-webkit-text-stroke: 1px var(--font-accent-color, #000))) {
   .label {
       -webkit-text-stroke: 1px var(--font-accent-color, #000);
       text-stroke: 1px var(--font-accent-color, #000);
@@ -148,11 +148,11 @@
 }
 
 .grayscale {
-  filter: grayscale(0.7);
+  filter: grayscale(0.5);
 }
 
 .saturate {
-  filter: saturate(350%)
+  filter: saturate(150%)
 }
 
 .blur {
@@ -168,11 +168,11 @@
 }
 
 .sepia {
-filter: sepia(80%) contrast(20%);
+filter: sepia(30%) contrast(50%);
 }
 
 .brightness {
-  filter: brightness(40%)
+  filter: brightness(30%)
 }
 
 .card__icon-button {
@@ -190,19 +190,19 @@ filter: sepia(80%) contrast(20%);
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid #000;
+  border: 2px solid #8B1A1A;
 }
 
 .card__like-button {
   width: 130px;
   height: 38px;
-  border: 2px solid #000;
-  background-color: var(--bg-color, #fff);
+  border: 2px solid #8B1A1A;
+  background-color: var(--bg-color, #000);
 }
 
 .button {
   border: 2px solid #8B1A1A;
-  background-color: var(--bg-color, #fff);
+  background-color: var(--bg-color, #000);
   position: relative;
   cursor: pointer;
   font-size: 14px;
@@ -216,7 +216,7 @@ filter: sepia(80%) contrast(20%);
 }
 
 .button:focus-visible {
-  border: 2px solid #000;
+  border: 2px solid #8B1A1A;
   box-shadow: 2px 2px 0 #000;
 }
 
@@ -241,7 +241,7 @@ filter: sepia(80%) contrast(20%);
   z-index: 10;
   position:relative;
   mix-blend-mode: difference;
-  color: var(--font-accent-color, #000);
+  color: var(--font-accent-color, #8B1A1A);
 }
 
 .footer__button {
@@ -268,16 +268,16 @@ filter: sepia(80%) contrast(20%);
   }
 }
 
-.save__icon {
+.button__save-icon {
   width: 21px;
   position: relative;
   mix-blend-mode: difference;
-  color: #000;
+  color: #fff;
   z-index: 2;
 }
 
 @media (width <=375px) {
-  .save__icon {
+  .button__save-icon {
     width: 28px;
   }
 }
@@ -285,7 +285,7 @@ filter: sepia(80%) contrast(20%);
 .dialog {
   max-inline-size: 355px;
   padding: 25px 30px;
-  border: 2px solid #000;
+  border: 2px solid #8B1A1A;
 }
 
 .dialog [open] {
@@ -293,11 +293,11 @@ filter: sepia(80%) contrast(20%);
 }
 
 dialog::backdrop {
-  background-color: #000;
+  background-color: #8B1A1A;
   opacity: 75%;
 } 
 
-.button__floppy {
+.dialog-floppy {
   width: 80px;
 }
 
@@ -317,7 +317,7 @@ dialog::backdrop {
 .dialog__button {
   inline-size: 100%;
   padding: 12px 0;
-  background-color: var(--bg-color, #fff);
+  background-color: var(--bg-color, #000);
   border: 2px solid #000;
   text-transform: uppercase;
   margin-block-start: 30px;
