@@ -268,7 +268,7 @@ filter: sepia(30%) contrast(50%);
   }
 }
 
-.button__save-icon {
+.button__floppy {
   width: 21px;
   position: relative;
   color: #000;
@@ -276,7 +276,7 @@ filter: sepia(30%) contrast(50%);
 }
 
 @media (width <=375px) {
-  .button__save-icon {
+  .button__floppy {
     width: 28px;
   }
 }
