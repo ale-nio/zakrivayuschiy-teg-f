@@ -241,7 +241,7 @@ filter: sepia(30%) contrast(50%);
   z-index: 10;
   position:relative;
   mix-blend-mode: difference;
-  color: var(--font-accent-color, #8B1A1A);
+  color: var(--font-accent-color, #000);
 }
 
 .footer__button {
@@ -272,7 +272,7 @@ filter: sepia(30%) contrast(50%);
   width: 21px;
   position: relative;
   mix-blend-mode: difference;
-  color: #fff;
+  color: #9C2A2A;
   z-index: 2;
 }
 
@@ -299,6 +299,7 @@ dialog::backdrop {
 
 .dialog__floppy {
   width: 80px;
+  z-index: 2;
 }
 
 .dialog__content {
