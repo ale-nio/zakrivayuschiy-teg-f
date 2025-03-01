@@ -7,9 +7,11 @@
     --font-accent-color: #9C2A2A; 
     --font-weight-title: 700;
     --font-weight-subtitle: 400;
+
     --bg-gradient: repeating-linear-gradient(to right, #ffb6c1 0 2px, transparent 2px 4px), 
     repeating-linear-gradient(to bottom, #ffb6c1 0 2px, transparent 2px 4px), 
     linear-gradient(#ffdde1, #ff8fab); 
+    
     --bg-color: #ffe4e1;
     --bg-accent-color: #ff4081; 
     --contour-color: #8B1A1A; 

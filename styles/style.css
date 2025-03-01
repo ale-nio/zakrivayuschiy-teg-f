@@ -28,12 +28,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
   max-inline-size: 700px;
   font-family: var(--font-accent, fantazy);
   padding: 127px 0;
   margin-inline: auto;
   border: 2px solid #8B1A1A;
-  gap: 20px;
   background-color: var(--bg-color, #fff);
 }
 
@@ -68,8 +68,8 @@
 .content {
   display: grid;
   gap: 1px;
-  border: 2px solid #8B1A1A;
   background-color: var(--bg-color, #000);
+  border: 2px solid #8B1A1A;
 }
 
 @media (width <=375px) {
@@ -84,27 +84,27 @@
 }
 
 .content_img {
-  border-block-start: 2px solid #8B1A1A;
-  border-block-end: 2px solid #8B1A1A;
   position: relative;
   aspect-ratio: 1/1;
   margin-inline: auto;
   block-size: 100%;
   inline-size: 100%;
+  border-block-start: 2px solid #8B1A1A;
+  border-block-end: 2px solid #8B1A1A;
 }
 
 .label {
+  display: block;
   position: absolute;
-  z-index: 1;
   font-family: var(--font-accent, fantazy);
   font-size: 14px;
+  text-shadow: 1px var(--font-accent-color, #000);
   filter: opacity(50%);
   color: var(--font-color, #000);
   mix-blend-mode: hard-light;
-  display: block;
   top: 25px;
   right: 25px;
-  text-shadow: 1px var(--font-accent-color, #000);
+  z-index: 1;
 }
 
 @media (width <=375px) {
@@ -123,11 +123,11 @@
 } 
 
 .card_type {
-  inline-size: 100%;
-  block-size: 100%;
+  display: block;
   object-fit: cover;
   object-position: center;
-  display: block;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .card_text {
@@ -143,8 +143,8 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 5px;
   padding: 0 25px 25px 0;
+  gap: 5px;
 }
 
 .grayscale {
@@ -176,11 +176,11 @@ filter: sepia(30%) contrast(50%);
 }
 
 .card__icon-button {
-  max-block-size: 38px;
+  position: relative;
   background-color: transparent;
   border: 2px solid transparent;
-  position: relative;
   padding: 0;
+  max-block-size: 38px;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -237,11 +237,11 @@ filter: sepia(30%) contrast(50%);
 .button__text {
   font-family: var(--font-accent, fantazy);
   font-size: 14px;
+  position:relative;
+  color: var(--font-accent-color, #000);
+  mix-blend-mode: difference;
   line-height: 12.6px;
   z-index: 10;
-  position:relative;
-  mix-blend-mode: difference;
-  color: var(--font-accent-color, #000);
 }
 
 .footer__button {
