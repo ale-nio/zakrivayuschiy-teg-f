@@ -271,8 +271,7 @@ filter: sepia(30%) contrast(50%);
 .button__save-icon {
   width: 21px;
   position: relative;
-  mix-blend-mode: difference;
-  color: #9C2A2A;
+  color: #000;
   z-index: 2;
 }
 
