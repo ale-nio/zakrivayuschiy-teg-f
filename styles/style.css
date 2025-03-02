@@ -273,7 +273,6 @@ filter: sepia(30%) contrast(50%);
   position: relative;
   color: #fff;
   z-index: 2;
-  
 }
 
 @media (width <=375px) {
