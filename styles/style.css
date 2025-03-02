@@ -271,8 +271,9 @@ filter: sepia(30%) contrast(50%);
 .button__floppy {
   width: 21px;
   position: relative;
-  color: #000;
+  color: #fff;
   z-index: 2;
+  
 }
 
 @media (width <=375px) {
