@@ -98,9 +98,9 @@
   position: absolute;
   font-family: var(--font-accent, fantazy);
   font-size: 14px;
-  text-shadow: 1px var(--font-accent-color, #000);
+  text-shadow: 1px var(--font-accent-color, #fff);
   filter: opacity(50%);
-  color: var(--font-color, #000);
+  color: var(--font-color, #fff);
   mix-blend-mode: hard-light;
   top: 25px;
   right: 25px;
