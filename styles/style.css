@@ -200,7 +200,7 @@ filter: sepia(30%) contrast(50%);
   background-color: var(--bg-color, #fff);
 }
 
-button {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,7 +276,7 @@ button {
   width: 21px;
   position: relative;
   mix-blend-mode: difference;
-  z-index: 10;
+  z-index: 2;
 }
 
 @media (width <=375px) {
